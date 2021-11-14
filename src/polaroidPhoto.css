@@ -1,7 +1,7 @@
 .polaroidFrame {
     background: white;
-    width: 420px;
-    height: 504px;
+    width: 42vh;
+    height: 50vh;
     box-shadow: 0 0 20px darkgray;
     
     position: relative;
@@ -14,11 +14,11 @@
 }
 
 .polaroidPhoto {
-    margin: 30px;
-    margin-bottom: 10px;
+    margin: 3vh;
+    margin-bottom: 1vh;
     background-clip: clip;
-    width: 360px;
-    height: 360px;
+    width: 36vh;
+    height: 36vh;
     background: lightslategrey;
 }
 .polaroidPhoto img {
