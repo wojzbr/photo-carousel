@@ -13,7 +13,7 @@ const PhotoCarousel = ({polaroidPhotos, moveLeft, moveRight}) => {
             <div className="arrow" onClick={moveLeft}><AiFillCaretLeft /></div>
             {/* <PolaroidPhoto imgSrc={polaroidPhotos[0]} imgDesc="some desc" /> */}
             {polaroidPhotos.map(polaroidPhoto => {
-                return <PolaroidPhoto imgSrc={polaroidPhoto} imgDesc="some desc" />
+                return <PolaroidPhoto imgSrc={polaroidPhoto.imgSrc} imgDesc={polaroidPhoto.imgDesc} />
             })}
             <div className="arrow" onClick={moveRight}><AiFillCaretRight /></div>
         </div>
