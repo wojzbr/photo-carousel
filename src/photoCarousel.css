@@ -1,12 +1,12 @@
 #photoCarousel {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
     align-items: center;
 }
 .arrow {
-    background: lightgray;
+    background: darkgray;
     color: white;
     cursor: pointer;
     width: 50px;
@@ -19,5 +19,5 @@
     font-size: 20px;
 }
 .arrow:hover{
-    background: darkgray;
+    background: darkslategray;
 }
