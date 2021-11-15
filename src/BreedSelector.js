@@ -1,4 +1,4 @@
-import './breedSelector.css'
+import './styles/breedSelector.css'
 import PolaroidPhoto from './PolaroidPhoto';
 
 const BreedSelector = ({setPolaroidPhotos, formatBreedName}) => {

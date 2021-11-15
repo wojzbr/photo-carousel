@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./photoCarousel.css"
+import "./styles/photoCarousel.css"
 
 import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai";
 

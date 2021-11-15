@@ -1,5 +1,5 @@
 import React from 'react'
-import './polaroidPhoto.css'
+import './styles/polaroidPhoto.css'
 
 const PolaroidPhoto = ({imgSrc, imgDesc}) => {
     return(

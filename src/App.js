@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import PhotoCarousel from './PhotoCarousel';
 import PolaroidPhoto from './PolaroidPhoto';
 import SelectBreed from './BreedSelector';
@@ -35,7 +35,8 @@ function App() {
       <PhotoCarousel 
         polaroidPhotos={polaroidPhotos}
       />
-      <a target="_blank" href="https://icons8.com/icon/9201/dog-paw">Dog Paw</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+      <a target="_blank" href="https://icons8.com/icon/9201/dog-paw" rel="noreferrer">Dog Paw</a> icon by 
+      <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
     </div>
   );
 }
