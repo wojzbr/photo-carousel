@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/photo-carousel/static/css/main.991cdf55.chunk.css",
+    "main.js": "/photo-carousel/static/js/main.d7d35c2a.chunk.js",
+    "main.js.map": "/photo-carousel/static/js/main.d7d35c2a.chunk.js.map",
+    "runtime-main.js": "/photo-carousel/static/js/runtime-main.917dfadc.js",
+    "runtime-main.js.map": "/photo-carousel/static/js/runtime-main.917dfadc.js.map",
+    "static/js/2.9fab8a85.chunk.js": "/photo-carousel/static/js/2.9fab8a85.chunk.js",
+    "static/js/2.9fab8a85.chunk.js.map": "/photo-carousel/static/js/2.9fab8a85.chunk.js.map",
+    "index.html": "/photo-carousel/index.html",
+    "static/css/main.991cdf55.chunk.css.map": "/photo-carousel/static/css/main.991cdf55.chunk.css.map",
+    "static/js/2.9fab8a85.chunk.js.LICENSE.txt": "/photo-carousel/static/js/2.9fab8a85.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/photo-carousel/static/media/LovedbytheKing-Regular.cc0e4fba.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.917dfadc.js",
+    "static/js/2.9fab8a85.chunk.js",
+    "static/css/main.991cdf55.chunk.css",
+    "static/js/main.d7d35c2a.chunk.js"
+  ]
+}
