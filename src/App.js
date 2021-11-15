@@ -63,8 +63,9 @@ function App() {
         setBound={setBound}
         slide={slide}
       />
-      <a target="_blank" href="https://icons8.com/icon/9201/dog-paw" rel="noreferrer">Dog Paw</a> icon by 
-      <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
+      <div id="clause">
+        <a target="_blank" href="https://icons8.com/icon/9201/dog-paw" rel="noreferrer">Dog Paw</a> favicon by <a target="_blank" href="https://icons8.com" rel="noreferrer">Icons8</a>
+      </div>
     </div>
   );
 }

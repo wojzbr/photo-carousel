@@ -1,4 +1,19 @@
 #breedSelector {
   position: relative;
-  top: 10vh;
+  top: 8vh;
+}
+#breeds {
+  width: 200px;
+  padding: 0 20px;
+  background: #9B59B6;
+  height: 30px;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+  outline: none;
+}
+#breeds option {
+  text-align: left;
+  color: black;
+  background: white;
 }

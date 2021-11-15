@@ -4,7 +4,7 @@ const BreedSelector = () => {
   return (
     <div id="breedSelector">
     <select id="breeds">
-      <option value="all breeds">ALL BREEDS</option>
+      <option value="all breeds">all breeds</option>
       <option value="affenpinscher">affenpinscher</option>
       <option value="african">african</option>
       <option value="airedale">airedale</option>
