@@ -2,15 +2,14 @@
     background: white;
     width: 42vh;
     height: 50vh;
+    margin: 3vh;
     box-shadow: 0 0 20px darkgray;
-    
-    position: relative;
-    top: 20px;
-    left: 20px;
 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    
+    transition: all 0.5s ease;
 }
 
 .polaroidPhoto {
