@@ -1,18 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect } from 'react'
 import "./styles/photoCarousel.css"
 
 import {AiFillCaretLeft, AiFillCaretRight} from "react-icons/ai";
 
-const PhotoCarousel = ({polaroidPhotos}) => {
-
-    const [bound, setBound] = useState(0)
-
-    const slide = (direction) => {
-        direction==="left"?
-            polaroidPhotos.push(polaroidPhotos.shift()):
-            polaroidPhotos.unshift(polaroidPhotos.pop());
-    }
-
+const PhotoCarousel = ({polaroidPhotos, photoMinatures, bound, setBound, slide}) => {
+    
     return (
         <div id="photoCarousel">
 
@@ -22,12 +14,14 @@ const PhotoCarousel = ({polaroidPhotos}) => {
             }}>
                 <div className="arrow"><AiFillCaretLeft /></div>
             </div>
-
-            <div id="photoContainer">
-                {/* {polaroidPhotos[(bound)%polaroidPhotos.length]}
-                {polaroidPhotos[(bound+1)%polaroidPhotos.length]}
-                {polaroidPhotos[(bound+2)%polaroidPhotos.length]} */}
-                {polaroidPhotos.map(photo=>photo)}
+            
+            <div id="allPhotosWrapper">
+                <div id="photoContainer">
+                    {polaroidPhotos.map(photo=>photo)}
+                </div>
+                <div id="photoMinatures">
+                    {photoMinatures.map(minature=>minature)}
+                </div>
             </div>
 
             <div className="arrowWrapper right" onClick={()=>{

@@ -4,11 +4,21 @@
     height: 100%;
     width: 100%;
     align-items: center;
+    flex-wrap: wrap;
+}
+#allPhotosWrapper {
+    width: 144vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #photoContainer {
     display: flex;
     overflow: hidden;
     width: 144vh;
+}
+#photoMinatures {
+    display: flex;
 }
 .arrowWrapper {
     display: flex;
@@ -37,6 +47,9 @@
 @media only screen and (max-width: 600px) {
     #photoContainer {
         width: 48vh;
+    }
+    #photoMinatures {
+        display: none;
     }
     .arrowWrapper {
         position: fixed;

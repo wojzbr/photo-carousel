@@ -20,11 +20,6 @@
     height: 36vh;
     background: lightslategrey;
 }
-.polaroidPhoto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 .polaroidDescription {
     font-family: "Loved by the king";
