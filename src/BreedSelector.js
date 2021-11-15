@@ -1,7 +1,6 @@
 import './styles/breedSelector.css'
-import PolaroidPhoto from './PolaroidPhoto';
 
-const BreedSelector = ({setPolaroidPhotos, formatBreedName}) => {
+const BreedSelector = () => {
   return (
     <div id="breedSelector">
     <select id="breeds">
@@ -151,21 +150,6 @@ const BreedSelector = ({setPolaroidPhotos, formatBreedName}) => {
       <option value="whippet">whippet</option>
       <option value="wolfhound/irish">irish wolfhound</option>
     </select>
-
-    <button onClick={(e)=>{
-        e.preventDefault();
-        setPolaroidPhotos([])
-        let url;
-        (document.getElementById("breeds").value === "all breeds")?
-          url='https://dog.ceo/api/breeds/image/random':
-          url=`https://dog.ceo/api/breed/${document.getElementById("breeds").value}/images/random`;
-        for(let i=0;i<10;i++){
-          fetch(url)
-            .then(response => response.json())
-            .then(data => setPolaroidPhotos(polaroidPhotos => [...polaroidPhotos, <PolaroidPhoto imgSrc={data.message} imgDesc={formatBreedName(data.message)} />
-            ]))
-        }
-    }}>SEARCH THEM DOGGOS</button>
     </div>
   )
 }

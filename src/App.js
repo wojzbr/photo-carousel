@@ -24,14 +24,24 @@ function App() {
         .then(data => setPolaroidPhotos(polaroidPhotos => [...polaroidPhotos, <PolaroidPhoto imgSrc={data.message} imgDesc={formatBreedName(data.message)} />
         ]))
     }
+    document.getElementById("breeds").addEventListener("change",()=>{
+      setPolaroidPhotos([])
+        let url;
+        (document.getElementById("breeds").value === "all breeds")?
+          url='https://dog.ceo/api/breeds/image/random':
+          url=`https://dog.ceo/api/breed/${document.getElementById("breeds").value}/images/random`;
+        for(let i=0;i<10;i++){
+          fetch(url)
+            .then(response => response.json())
+            .then(data => setPolaroidPhotos(polaroidPhotos => [...polaroidPhotos, <PolaroidPhoto imgSrc={data.message} imgDesc={formatBreedName(data.message)} />
+            ]))
+        }
+    })
   }, [])
 
   return (
     <div className="App">
-      <SelectBreed 
-        setPolaroidPhotos={setPolaroidPhotos}
-        formatBreedName={formatBreedName}
-      />
+      <SelectBreed />
       <PhotoCarousel 
         polaroidPhotos={polaroidPhotos}
       />
