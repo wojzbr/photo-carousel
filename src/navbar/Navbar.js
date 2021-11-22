@@ -4,7 +4,11 @@ import { AiOutlineMenu } from 'react-icons/ai'
 import SelectBreed from '../BreedSelector'
 
 const Navbar = () => {
-    
+    useEffect(()=>{
+        document.getElementById("photoCarousel").addEventListener("click", ()=>{
+            document.getElementById("buttonsWrapper").style.right="-70vw"
+        })
+    },[])
     return(
         <div id="navbarWrapper">
             <div id="buttonsWrapper">

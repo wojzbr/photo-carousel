@@ -19,7 +19,7 @@
 @media only screen and (max-width: 768px) {
     #navbarWrapper {
         z-index: 30;
-        justify-content: end;
+        justify-content: flex-end;
     }
     #buttonsWrapper {
         position: absolute;

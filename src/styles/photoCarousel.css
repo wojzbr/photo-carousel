@@ -52,7 +52,8 @@
         display: none;
     }
     #allPhotosWrapper {
-        width: 100vw;
+        width: 42vh;
+        margin: auto;
     }
     .arrowWrapper {
         position: fixed;
