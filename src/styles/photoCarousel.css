@@ -15,7 +15,7 @@
 #photoContainer {
     display: flex;
     overflow: hidden;
-    width: 144vh;
+    width: 100%;
 }
 #photoMinatures {
     display: flex;
@@ -44,12 +44,15 @@
     background: #9B59B6;
     opacity: 1;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     #photoContainer {
         width: 48vh;
     }
     #photoMinatures {
         display: none;
+    }
+    #allPhotosWrapper {
+        width: 100vw;
     }
     .arrowWrapper {
         position: fixed;

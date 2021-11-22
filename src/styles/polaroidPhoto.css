@@ -27,3 +27,9 @@
     height: auto;
     padding: 0 30px;
 }
+
+@media only screen and (max-width: 768px) {
+    .polaroidFrame {
+        margin: 0 calc((100vw - 42vh) /2);
+    }
+}

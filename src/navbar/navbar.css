@@ -1,0 +1,39 @@
+#navbarWrapper {
+    position: fixed;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 1px 0;
+    z-index: 10;
+}
+#buttonsWrapper {
+    display: flex;
+}
+#burgerMenuWrapper {
+    padding: 10px;
+    color: var(--accent);
+    display: none;
+}
+@media only screen and (max-width: 768px) {
+    #navbarWrapper {
+        z-index: 30;
+        justify-content: end;
+    }
+    #buttonsWrapper {
+        position: absolute;
+        height: calc(100vh - 60px);
+        top: 60px;
+        right: -70vw;
+        width: 70vw;
+        flex-direction: column;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px lightgray;
+        transition: right 0.3s ease;
+    }
+    #burgerMenuWrapper {
+        display: flex;
+    }
+}

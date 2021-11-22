@@ -1,14 +1,14 @@
 #breedSelector {
   position: relative;
-  top: 8vh;
+  margin: 10px;
 }
 #breeds {
   width: 200px;
   padding: 0 20px;
-  background: #9B59B6;
-  height: 30px;
+  border: 1px solid #9B59B6;
+  height: 40px;
   border-radius: 5px;
-  color: white;
+  color: #9B59B6;
   text-align: center;
   outline: none;
 }
@@ -16,4 +16,12 @@
   text-align: left;
   color: black;
   background: white;
+}
+@media only screen and (max-width: 768px) {
+  #breedSelector {
+    top: 0;
+  }
+  #breeds {
+    width: 100%;
+  }
 }

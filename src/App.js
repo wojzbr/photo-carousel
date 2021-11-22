@@ -3,6 +3,7 @@ import PhotoCarousel from './PhotoCarousel';
 import PolaroidPhoto from './PolaroidPhoto';
 import PhotoMinature from './PhotoMinature';
 import SelectBreed from './BreedSelector';
+import Navbar from './navbar/Navbar'
 import {useState, useEffect} from 'react'
 
 const formatBreedName = (url) => {
@@ -38,24 +39,26 @@ function App() {
     document.getElementById("breeds").addEventListener("change",()=>{
       setPolaroidPhotos([])
       setPhotoMinatures([])
-        let url;
-        (document.getElementById("breeds").value === "all breeds")?
-          url='https://dog.ceo/api/breeds/image/random':
-          url=`https://dog.ceo/api/breed/${document.getElementById("breeds").value}/images/random`;
-        for(let i=0;i<10;i++){
-          fetch(url)
-            .then(response => response.json())
-            .then(data => {
-                setPolaroidPhotos(polaroidPhotos => [...polaroidPhotos, <PolaroidPhoto imgSrc={data.message} imgDesc={formatBreedName(data.message)} />])
-                setPhotoMinatures(photoMinatures => [...photoMinatures, <PhotoMinature imgSrc={data.message} />])
-          })
-        }
+      let url;
+      (document.getElementById("breeds").value === "all breeds")?
+        url='https://dog.ceo/api/breeds/image/random':
+        url=`https://dog.ceo/api/breed/${document.getElementById("breeds").value}/images/random`;
+      for(let i=0;i<10;i++){
+        fetch(url)
+          .then(response => response.json())
+          .then(data => {
+              setPolaroidPhotos(polaroidPhotos => [...polaroidPhotos, <PolaroidPhoto imgSrc={data.message} imgDesc={formatBreedName(data.message)} />])
+              setPhotoMinatures(photoMinatures => [...photoMinatures, <PhotoMinature imgSrc={data.message} />])
+        })
+      }
+      document.getElementById("buttonsWrapper").style.right="-70vw"
     })
   }, [])
 
   return (
     <div className="App">
-      <SelectBreed />
+      <Navbar />
+      
       <PhotoCarousel 
         polaroidPhotos={polaroidPhotos}
         photoMinatures={photoMinatures}
